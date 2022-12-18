@@ -1,0 +1,59 @@
+{
+  "databases": {
+    "dblp": {
+      "path": "E:\\Databases\\sample_dbs\\dblp\\tdb",
+      "source": "E:\\Databases\\sample_dbs\\dblp\\dblp.nt",
+      "identifierMap": "configs\\identifierMaps\\dblp.json"
+    },
+    "s2arxiv": {
+      "path": "E:\\Databases\\sample_dbs\\s2arxiv\\tdb",
+      "source": "E:\\Databases\\sample_dbs\\s2arxiv\\s2arxiv.nt",
+      "identifierMap": "configs\\identifierMaps\\s2arxiv.json"
+    },
+    "s2doi": {
+      "path": "E:\\Databases\\sample_dbs\\s2doi\\tdb",
+      "source": "E:\\Databases\\sample_dbs\\s2doi\\s2doi.nt",
+      "identifierMap": "configs\\identifierMaps\\s2doi.json"
+    },
+    "arxiv": {
+      "path": "E:\\Databases\\sample_dbs\\arxiv\\tdb",
+      "source": "E:\\Databases\\sample_dbs\\arxiv\\arxiv.nt",
+      "identifierMap": "configs\\identifierMaps\\arxiv.json"
+    },
+    "scigraph": {
+      "path": "E:\\Databases\\sample_dbs\\scigraph\\tdb",
+      "source": "E:\\Databases\\sample_dbs\\\\scigraph\\scigraph.nt",
+      "identifierMap": "configs\\identifierMaps\\scigraph.json"
+    },
+    "crossref": {
+      "path": "E:\\Databases\\sample_dbs\\crossref\\tdb",
+      "source": "E:\\Databases\\sample_dbs\\crossref\\crossref.nt",
+      "identifierMap": "configs\\identifierMaps\\crossref.json"
+    },
+    "moviedb": {
+      "path": "E:\\Databases\\sample_dbs\\moviedb\\tdb",
+      "source": "E:\\Databases\\sample_dbs\\moviedb\\moviedb.ttl",
+      "identifierMap": "configs\\identifierMaps\\moviedb.json"
+    },
+    "omdb": {
+      "path": "E:\\Databases\\sample_dbs\\omdb\\tdb",
+      "source": "E:\\Databases\\sample_dbs\\omdb\\omdb.ttl",
+      "identifierMap": "configs\\identifierMaps\\omdb.json"
+    },
+    "tmdb": {
+      "path": "E:\\Databases\\sample_dbs\\tmdb\\tdb",
+      "source": "E:\\Databases\\sample_dbs\\tmdb\\tmdb.ttl",
+      "identifierMap": "configs\\identifierMaps\\tmdb.json"
+    },
+    "geodb": {
+      "path": "E:\\Databases\\sample_dbs\\geodb_english\\tdb",
+      "source": "E:\\Databases\\sample_dbs\\geodb_english\\geodb_english.ttl",
+      "identifierMap": "configs\\identifierMaps\\geodb.json"
+    },
+    "restcountries-api": {
+      "path": "E:\\Databases\\sample_dbs\\rest_countries_api\\tdb",
+      "source": "E:\\Databases\\sample_dbs\\rest_countries_api\\rest_countries_api.ttl",
+      "identifierMap": "configs\\identifierMaps\\restcountries-api.json"
+    }
+  }
+}

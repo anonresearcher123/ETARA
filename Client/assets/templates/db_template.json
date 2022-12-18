@@ -1,0 +1,6 @@
+{
+  "path": "C:\\Users\\{user}\\{pathToDB}\\tdb",
+  "identifierMap": "configs\\identifierMaps\\scigraph.json",
+  "source": "C:\\Users\\{user}\\{pathToDB}\\scigraph.nt",
+  "label": "{db_label}"
+}

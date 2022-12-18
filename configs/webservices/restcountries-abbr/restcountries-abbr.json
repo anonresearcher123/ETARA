@@ -1,0 +1,15 @@
+{
+  "webservice" : "/restcountries-abbr/country",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "inputs" : [ "q" ],
+  "latency": "1000",
+  "maxRequestsPerMinute": "60",
+  "maxRequests": "2000",
+  "where" : [
+    ["?subject", "hasCca3", "$q"]
+  ],
+  "inputMode": "upperCase",
+  "returnTemplate": "restcountries-abbr/restcountries-abbr.json.ftl",
+  "db": "restcountries-api"
+}

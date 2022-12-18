@@ -1,0 +1,12 @@
+{
+  "name": "{api_long_name}",
+  "format": "json",
+  "label": "{api_short_name}",
+  "parameters": [{
+    "filter": ["http://www.wikidata.org/prop/direct/P356"],
+    "name": "q",
+    "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+    "status": "required"
+  }],
+  "url": "http://localhost:8080/etara/webservices/dblp/work?doi={q}"
+}

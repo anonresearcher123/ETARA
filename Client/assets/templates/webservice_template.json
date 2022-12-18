@@ -1,0 +1,20 @@
+{
+  "webservice": "/{ws-name}/{pathname}",
+  "db": "scigraph",
+  "returnTemplate": "{ws-name}/{ws-name}.json.ftl",
+  "errorType": "jsonWithStatus",
+  "inputs": [
+    "doi"
+  ],
+  "latency": "1000",
+  "maxRequests": "2000",
+  "where": [
+    [
+      "?subject",
+      "doi",
+      "$doi"
+    ]
+  ],
+  "type": "precise",
+  "maxRequestsPerMinute": "60"
+}
