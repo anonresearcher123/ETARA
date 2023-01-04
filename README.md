@@ -6,4 +6,4 @@ ETARA (Evaluation Toolkit for API and RDF Alignment) is a toolkit to support the
 ## How to use ETARA?
 
 ## Where to find data sets?
-[Download](shorturl.at/fgqV4)
+[Download](https://shorturl.at/fgqV4 "Link to datasets")
