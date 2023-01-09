@@ -19,6 +19,37 @@ In order to run ETARA several configurations must be done first. The cloned proj
 ```
 
 ### Configuring Web APIs
+```
+{
+    "feed": {
+        "entry": {
+            "title": <#if subject.findValue("title")??>"${subject.findValue("title")?json_string}",<#else>"",</#if>
+            "author": [<#list subject.findValues("authorName") as name>
+                {
+                  "name": ${toJSONString(name)}
+                }<#sep>,</#sep>
+            </#list>]
+        }
+    }
+}            
+```
+
+```
+{
+  "webservice" : "/example/publication",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "1000",
+  "maxRequestsPerMinute": "60",
+  "maxRequests": "2000",
+  "inputs" : [ "arxivId" ],
+  "where" : [
+    ["?subject", "key", "$arxivId"]
+  ],
+  "returnTemplate": "arxiv/arxiv.json.ftl",
+  "db": "arxiv"
+}         
+```
 
 ### Running and Using ETARA
 
