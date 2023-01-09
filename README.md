@@ -12,9 +12,40 @@ In order to run ETARA several configurations must be done first. The cloned proj
   "port": 8080,
   "config-folder": "configs/webservices",
   "dbPath": "configs/databases.json",
-  "apiPath": "configs/apis.json",
   "outputPath": "res/",
   "loglevel": "0"
+}
+```
+
+### Configuring Data Bases
+```
+{
+  "databases": {
+    "dblp": {
+      "path": "C:\\Databases\\example\\tdb",
+      "source": "C:\\Databases\\example\\example.nt",
+      "identifierMap": "configs\\identifierMaps\\example.json"
+    }
+  }
+}
+```
+
+```
+{ 
+  "type" : "<http://example/com/arxiv/type>" ,
+  "id" : "<http://example/com/arxiv/id>" ,
+  "key" : "<http://example/com/arxiv/key>" ,
+  "published" : "<http://example/com/arxiv/published>" ,
+  "title" : "<http://example/com/arxiv/title>" ,
+  "primaryCategoryTerm" : "<http://example/com/arxiv/primaryCategoryTerm>" ,
+  "updated" : "<http://example/com/arxiv/updated>" ,
+  "authorName" : "<http://example/com/arxiv/authorName>" ,
+  "link" : "<http://example/com/arxiv/link>" ,
+  "category" : "<http://example/com/arxiv/category>" ,
+  "rel" : "<http://example/com/arxiv/rel>" ,
+  "href" : "<http://example/com/arxiv/href>" ,
+  "scheme" : "<http://example/com/arxiv/scheme>" ,
+  "term" : "<http://example/com/arxiv/term>"
 }
 ```
 
