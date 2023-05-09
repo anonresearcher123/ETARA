@@ -1,0 +1,20 @@
+{
+  "returnTemplate": "f4ttt.imdbid.getTitle/f4ttt.imdbid.getTitle.json.ftl",
+  "errorType": "jsonWithStatus",
+  "inputs": [
+    "imdbid"
+  ],
+  "latency": "500",
+  "maxRequests": "20000",
+  "where": [
+    [
+      "?subject",
+      "imdbid",
+      "$imdbid"
+    ]
+  ],
+  "webservice": "/f4ttt/movie",
+  "type": "precise",
+  "maxRequestsPerMinute": "600",
+  "db": "tainted_lmdb3"
+}

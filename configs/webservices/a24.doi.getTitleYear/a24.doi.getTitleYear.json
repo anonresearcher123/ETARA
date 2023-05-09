@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a24/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "400",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "doi" ],
+  "where" : [
+    ["?subject", "doi", "$doi"]
+  ],
+  "returnTemplate": "a24.doi.getTitleYear/a24.doi.getTitleYear.json.ftl",
+  "db": "sample_s2_doi"
+}

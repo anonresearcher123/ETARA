@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a20/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "1000",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "doi" ],
+  "where" : [
+    ["?subject", "doi", "$doi"]
+  ],
+  "returnTemplate": "a20.doi.getTitleYear/a20.doi.getTitleYear.json.ftl",
+  "db": "sample_dblp"
+}

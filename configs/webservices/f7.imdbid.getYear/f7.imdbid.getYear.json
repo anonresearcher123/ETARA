@@ -1,0 +1,20 @@
+{
+  "returnTemplate": "f7.imdbid.getYear/f7.imdbid.getYear.json.ftl",
+  "errorType": "jsonWithStatus",
+  "inputs": [
+    "imdbid"
+  ],
+  "latency": "0",
+  "maxRequests": "20000",
+  "where": [
+    [
+      "?subject",
+      "imdbid",
+      "$imdbid"
+    ]
+  ],
+  "webservice": "/f7/movie",
+  "type": "precise",
+  "maxRequestsPerMinute": "600",
+  "db": "sample_moviedb"
+}

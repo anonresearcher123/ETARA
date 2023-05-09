@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a44t/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "0",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "dblpId" ],
+  "where" : [
+    ["?subject", "dblpid", "$dblpId"]
+  ],
+  "returnTemplate": "a44t.dblpid.getName/a44t.dblpid.getName.json.ftl",
+  "db": "tainted_dblp2"
+}

@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a37/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "1000",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "doi" ],
+  "where" : [
+    ["?subject", "doi", "$doi"]
+  ],
+  "returnTemplate": "a37.doi.getPublisher/a37.doi.getPublisher.json.ftl",
+  "db": "sample_crossref"
+}

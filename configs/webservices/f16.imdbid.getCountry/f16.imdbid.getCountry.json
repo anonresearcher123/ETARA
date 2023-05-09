@@ -1,0 +1,20 @@
+{
+  "returnTemplate": "f16.imdbid.getCountry/f16.imdbid.getCountry.json.ftl",
+  "errorType": "jsonWithStatus",
+  "inputs": [
+    "imdbid"
+  ],
+  "latency": "0",
+  "maxRequests": "20000",
+  "where": [
+    [
+      "?subject",
+      "imdb_id",
+      "$imdbid"
+    ]
+  ],
+  "webservice": "/f16/movie",
+  "type": "precise",
+  "maxRequestsPerMinute": "600",
+  "db": "sample_tmdb"
+}

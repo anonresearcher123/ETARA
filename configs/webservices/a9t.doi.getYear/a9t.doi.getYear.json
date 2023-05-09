@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a9t/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "0",
+  "maxRequestsPerMinute": "6000",
+  "maxRequests": "20000",
+  "inputs" : [ "doi" ],
+  "where" : [
+    ["?subject", "doi", "$doi"]
+  ],
+  "returnTemplate": "a9t.doi.getYear/a9t.doi.getYear.json.ftl",
+  "db": "tainted_dblp"
+}

@@ -1,0 +1,20 @@
+{
+  "returnTemplate": "f1.imdbid.getTitle/f1.imdbid.getTitle.json.ftl",
+  "errorType": "jsonWithStatus",
+  "inputs": [
+    "imdbid"
+  ],
+  "latency": "0",
+  "maxRequests": "20000",
+  "where": [
+    [
+      "?subject",
+      "imdb_id",
+      "$imdbid"
+    ]
+  ],
+  "webservice": "/f1/movie",
+  "type": "precise",
+  "maxRequestsPerMinute": "600",
+  "db": "sample_tmdb"
+}

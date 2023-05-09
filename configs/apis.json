@@ -1,0 +1,26 @@
+{"apis": [
+    {
+        "name": "Arxiv",
+        "format": "json",
+        "label": "arxiv",
+        "parameters": [{
+            "filter": ["http://www.wikidata.org/prop/direct/P818"],
+            "name": "q",
+            "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+            "status": "required"
+        }],
+        "url": "http://localhost:8080/webservices/arxiv/work?arxivId={q}"
+    },
+    {
+        "name": "CrossRef",
+        "format": "json",
+        "label": "crossref",
+        "parameters": [{
+            "filter": ["http://www.wikidata.org/prop/direct/P356"],
+            "name": "q",
+            "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+            "status": "required"
+        }],
+        "url": "http://localhost:8080/webservices/crossref/work?doi={q}"
+    }
+]}

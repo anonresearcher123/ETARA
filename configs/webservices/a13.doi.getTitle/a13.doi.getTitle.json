@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a13/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "500",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "doi" ],
+  "where" : [
+    ["?subject", "doi", "$doi"]
+  ],
+  "returnTemplate": "a13.doi.getTitle/a13.doi.getTitle.json.ftl",
+  "db": "sample_scigraph"
+}

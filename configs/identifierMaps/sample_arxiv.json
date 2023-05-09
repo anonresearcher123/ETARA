@@ -1,0 +1,17 @@
+{ 
+  "type" : "<http://example/com/arxiv/type>" ,
+  "summary" : "<http://example/com/arxiv/summary>" ,
+  "id" : "<http://example/com/arxiv/id>" ,
+  "key" : "<http://example/com/arxiv/key>" ,
+  "published" : "<http://example/com/arxiv/published>" ,
+  "title" : "<http://example/com/arxiv/title>" ,
+  "primaryCategoryTerm" : "<http://example/com/arxiv/primaryCategoryTerm>" ,
+  "updated" : "<http://example/com/arxiv/updated>" ,
+  "authorName" : "<http://example/com/arxiv/authorName>" ,
+  "link" : "<http://example/com/arxiv/link>" ,
+  "category" : "<http://example/com/arxiv/category>" ,
+  "rel" : "<http://example/com/arxiv/rel>" ,
+  "href" : "<http://example/com/arxiv/href>" ,
+  "scheme" : "<http://example/com/arxiv/scheme>" ,
+  "term" : "<http://example/com/arxiv/term>"
+}

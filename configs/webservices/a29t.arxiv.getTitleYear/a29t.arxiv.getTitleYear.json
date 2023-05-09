@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a29t/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "0",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "arxiv" ],
+  "where" : [
+    ["?subject", "arxiv", "$arxiv"]
+  ],
+  "returnTemplate": "a29t.arxiv.getTitleYear/a29t.arxiv.getTitleYear.json.ftl",
+  "db": "tainted_dblp"
+}

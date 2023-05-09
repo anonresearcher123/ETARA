@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a43/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "100",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "dblpId" ],
+  "where" : [
+    ["?subject", "dblpid", "$dblpId"]
+  ],
+  "returnTemplate": "a43.dblpid.getName/a43.dblpid.getName.json.ftl",
+  "db": "sample_dblp"
+}

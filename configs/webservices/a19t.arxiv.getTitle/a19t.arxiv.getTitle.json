@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a19t/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "0",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "arxiv" ],
+  "where" : [
+    ["?subject", "arxiv", "$arxiv"]
+  ],
+  "returnTemplate": "a19t.arxiv.getTitle/a19t.arxiv.getTitle.json.ftl",
+  "db": "tainted_dblp1"
+}

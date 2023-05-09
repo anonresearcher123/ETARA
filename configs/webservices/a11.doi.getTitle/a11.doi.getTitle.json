@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a11/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "500",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "doi" ],
+  "where" : [
+    ["?subject", "doi", "$doi"]
+  ],
+  "returnTemplate": "a11.doi.getTitle/a11.doi.getTitle.json.ftl",
+  "db": "sample_dblp"
+}

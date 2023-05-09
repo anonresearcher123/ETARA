@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a14t/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "0",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "doi" ],
+  "where" : [
+    ["?subject", "doi", "$doi"]
+  ],
+  "returnTemplate": "a14t.doi.getTitle/a14t.doi.getTitle.json.ftl",
+  "db": "tainted_dblp1"
+}

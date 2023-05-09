@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a31/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "1000",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "doi" ],
+  "where" : [
+    ["?subject", "doi", "$doi"]
+  ],
+  "returnTemplate": "a31.doi.getPages/a31.doi.getPages.json.ftl",
+  "db": "sample_dblp"
+}

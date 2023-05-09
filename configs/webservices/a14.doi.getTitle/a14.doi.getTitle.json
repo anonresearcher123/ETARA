@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a14/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "300",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "doi" ],
+  "where" : [
+    ["?subject", "doi", "$doi"]
+  ],
+  "returnTemplate": "a14.doi.getTitle/a14.doi.getTitle.json.ftl",
+  "db": "sample_s2_doi"
+}

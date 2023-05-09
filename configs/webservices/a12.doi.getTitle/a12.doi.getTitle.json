@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a12/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "700",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "doi" ],
+  "where" : [
+    ["?subject", "doi", "$doi"]
+  ],
+  "returnTemplate": "a12.doi.getTitle/a12.doi.getTitle.json.ftl",
+  "db": "sample_crossref"
+}

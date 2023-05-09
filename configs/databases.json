@@ -1,0 +1,87 @@
+{"databases": {
+    "hose_schenkel": {
+        "path": "C:\\Databases\\sample_dbs\\hose_schenkel\\tdb",
+        "identifierMap": "configs\\identifierMaps\\hose_schenkel.json",
+        "source": "C:\\Databases\\sample_dbs\\hose_schenkel\\hose_schenkel.nt"
+    },
+    "sample_s2_arxiv": {
+        "path": "C:\\Databases\\sample_dbs\\s2arxiv\\tdb",
+        "identifierMap": "configs\\identifierMaps\\sample_s2arxiv.json",
+        "source": "C:\\Databases\\sample_dbs\\s2arxiv\\s2arxiv.nt"
+    },
+    "sample_arxiv": {
+        "path": "C:\\Databases\\sample_dbs\\arxiv\\tdb",
+        "identifierMap": "configs\\identifierMaps\\sample_arxiv.json",
+        "source": "C:\\Databases\\sample_dbs\\arxiv\\arxiv.nt"
+    },
+    "hose_schenkel_tainted": {
+        "path": "C:\\Databases\\sample_dbs\\hose_schenkel_tainted\\tdb",
+        "identifierMap": "configs\\identifierMaps\\hose_schenkel_tainted.json",
+        "source": "C:\\Databases\\sample_dbs\\hose_schenkel\\hose_schenkel_tainted.nt"
+    },
+    "sample_dblp": {
+        "path": "C:\\Databases\\sample_dbs\\dblp\\tdb",
+        "identifierMap": "configs\\identifierMaps\\sample_dblp.json",
+        "source": "C:\\Databases\\sample_dbs\\dblp\\dblp.nt"
+    },
+    "sample_crossref": {
+        "path": "C:\\Databases\\sample_dbs\\crossref\\tdb",
+        "identifierMap": "configs\\identifierMaps\\sample_crossref.json",
+        "source": "C:\\Databases\\sample_dbs\\crossref\\crossref.nt"
+    },
+    "sample_scigraph": {
+        "path": "C:\\Databases\\sample_dbs\\scigraph\\tdb",
+        "identifierMap": "configs\\identifierMaps\\sample_scigraph.json",
+        "source": "C:\\Databases\\sample_dbs\\scigraph\\scigraph.nt"
+    },
+    "sample_s2_doi": {
+        "path": "C:\\Databases\\sample_dbs\\s2doi\\tdb",
+        "identifierMap": "configs\\identifierMaps\\sample_s2doi.json",
+        "source": "C:\\Databases\\sample_dbs\\s2doi\\s2doi.nt"
+    },
+    "tainted_dblp1": {
+        "path": "C:\\Databases\\sample_dbs\\tainted_dblp1\\tdb",
+        "identifierMap": "configs\\identifierMaps\\tainted_dblp1.json",
+        "source": "C:\\Databases\\sample_dbs\\tainted_dblp1\\tainted_dblp1.nt"
+    },
+    "tainted_dblp2": {
+        "path": "C:\\Databases\\sample_dbs\\tainted_dblp2\\tdb",
+        "identifierMap": "configs\\identifierMaps\\tainted_dblp2.json",
+        "source": "C:\\Databases\\sample_dbs\\tainted_dblp2\\tainted_dblp2.nt"
+    },
+    "tainted_dblp3": {
+        "path": "C:\\Databases\\sample_dbs\\tainted_dblp3\\tdb",
+        "identifierMap": "configs\\identifierMaps\\tainted_dblp3.json",
+        "source": "C:\\Databases\\sample_dbs\\tainted_dblp3\\tainted_dblp2.nt"
+    },
+    "sample_omdb": {
+        "path": "C:\\Databases\\sample_dbs\\movies\\omdb\\tdb",
+        "identifierMap": "configs\\identifierMaps\\omdb.json",
+        "source": "C:\\Databases\\sample_dbs\\movies\\omdb\\omdb.ttl"
+    },
+    "sample_tmdb": {
+        "path": "C:\\Databases\\sample_dbs\\movies\\tmdb\\tdb",
+        "identifierMap": "configs\\identifierMaps\\tmdb.json",
+        "source": "C:\\Databases\\sample_dbs\\movies\\tmdb\\tmdb.ttl"
+    },
+    "sample_lmdb": {
+        "path": "C:\\Databases\\sample_dbs\\movies\\lmdb\\tdb",
+        "identifierMap": "configs\\identifierMaps\\lmdb.json",
+        "source": "C:\\Databases\\sample_dbs\\movies\\lmdb\\lmdb.ttl"
+    },
+    "tainted_lmdb1": {
+        "path": "C:\\Databases\\sample_dbs\\movies\\tainted_lmdb1\\tdb",
+        "identifierMap": "configs\\identifierMaps\\tainted_lmdb1.json",
+        "source": "C:\\Databases\\sample_dbs\\movies\\tainted_lmdb1\\tainted_lmdb1.nt"
+    },
+    "tainted_lmdb2": {
+        "path": "C:\\Databases\\sample_dbs\\movies\\tainted_lmdb2\\tdb",
+        "identifierMap": "configs\\identifierMaps\\tainted_lmdb2.json",
+        "source": "C:\\Databases\\sample_dbs\\movies\\tainted_lmdb2\\tainted_lmdb2.nt"
+    },
+    "tainted_lmdb3": {
+        "path": "C:\\Databases\\sample_dbs\\movies\\tainted_lmdb3\\tdb",
+        "identifierMap": "configs\\identifierMaps\\tainted_lmdb3.json",
+        "source": "C:\\Databases\\sample_dbs\\movies\\tainted_lmdb3\\tainted_lmdb3.nt"
+    }
+}}

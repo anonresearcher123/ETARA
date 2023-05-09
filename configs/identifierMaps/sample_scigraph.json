@@ -1,0 +1,21 @@
+{ 
+  "doi" : "<http://example/com/scigraph/doi>" ,
+  "issn" : "<http://example/com/scigraph/issn>" ,
+  "journalID" : "<http://example/com/scigraph/journalID>" ,
+  "publicationName" : "<http://example/com/scigraph/publicationName>" ,
+  "journalVolume" : "<http://example/com/scigraph/journalVolume>" ,
+  "journalNumber" : "<http://example/com/scigraph/journalNumber>" ,
+  "publicationType" : "<http://example/com/scigraph/publicationType>" ,
+  "title" : "<http://example/com/scigraph/title>" ,
+  "abstract" : "<http://example/com/scigraph/abstract>" ,
+  "contentType" : "<http://example/com/scigraph/contentType>" ,
+  "publicationDate" : "<http://example/com/scigraph/publicationDate>" ,
+  "pageNumbers" : "<http://example/com/scigraph/pageNumbers>" ,
+  "publisher" : "<http://example/com/scigraph/publisher>" ,
+  "country" : "<http://example/com/scigraph/country>" ,
+  "electronicEdition" : "<http://example/com/scigraph/electronicEdition>" ,
+  "creator" : "<http://example/com/scigraph/creator>" ,
+  "type" : "<http://example/com/scigraph/type>" ,
+  "subject" : "<http://example/com/scigraph/subject>" ,
+  "keyword" : "<http://example/com/scigraph/keyword>"
+}

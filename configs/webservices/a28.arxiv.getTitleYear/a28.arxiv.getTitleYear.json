@@ -1,0 +1,16 @@
+{
+    "returnTemplate": "a28.arxiv.getTitleYear/a28.arxiv.getTitleYear.json.ftl",
+    "errorType": "jsonWithStatus",
+    "inputs": ["arxiv"],
+    "latency": "1000",
+    "maxRequests": "20000",
+    "where": [[
+        "?subject",
+        "arxivId",
+        "$arxiv"
+    ]],
+    "webservice": "/a28/work",
+    "type": "precise",
+    "maxRequestsPerMinute": "600",
+    "db": "sample_s2_arxiv"
+}

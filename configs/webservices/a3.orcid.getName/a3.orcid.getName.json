@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a3/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "700",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "orcid" ],
+  "where" : [
+    ["?subject", "orcid", "$orcid"]
+  ],
+  "returnTemplate": "a3.orcid.getName/a3.orcid.getName.json.ftl",
+  "db": "sample_dblp"
+}

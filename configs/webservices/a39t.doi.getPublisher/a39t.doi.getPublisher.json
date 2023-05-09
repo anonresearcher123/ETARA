@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a39t/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "0",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "doi" ],
+  "where" : [
+    ["?subject", "doi", "$doi"]
+  ],
+  "returnTemplate": "a39t.doi.getPublisher/a39t.doi.getPublisher.json.ftl",
+  "db": "tainted_s2_doi"
+}

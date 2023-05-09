@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a36/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "1000",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "doi" ],
+  "where" : [
+    ["?subject", "doi", "$doi"]
+  ],
+  "returnTemplate": "a36.doi.getPublisher/a36.doi.getPublisher.json.ftl",
+  "db": "sample_dblp"
+}

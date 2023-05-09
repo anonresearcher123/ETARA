@@ -1,0 +1,20 @@
+{
+  "returnTemplate": "a0.orcid.getName/a0.orcid.getName.json.ftl",
+  "errorType": "jsonWithStatus",
+  "inputs": [
+    "orcid"
+  ],
+  "latency": "0",
+  "maxRequests": "20000",
+  "where": [
+    [
+      "?subject",
+      "orcid",
+      "$orcid"
+    ]
+  ],
+  "webservice": "/a0/work",
+  "type": "precise",
+  "maxRequestsPerMinute": "600",
+  "db": "sample_dblp"
+}

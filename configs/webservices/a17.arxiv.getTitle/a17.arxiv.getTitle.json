@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a17/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "100",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "arxiv" ],
+  "where" : [
+    ["?subject", "key", "$arxiv"]
+  ],
+  "returnTemplate": "a17.arxiv.getTitle/a17.arxiv.getTitle.json.ftl",
+  "db": "sample_arxiv"
+}

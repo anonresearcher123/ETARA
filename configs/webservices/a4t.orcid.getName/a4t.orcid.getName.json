@@ -1,0 +1,14 @@
+{
+  "webservice" : "/a4t/work",
+  "errorType": "jsonWithStatus",
+  "type": "precise",
+  "latency": "0",
+  "maxRequestsPerMinute": "600",
+  "maxRequests": "20000",
+  "inputs" : [ "orcid" ],
+  "where" : [
+    ["?subject", "orcid", "$orcid"]
+  ],
+  "returnTemplate": "a4t.orcid.getName/a4t.orcid.getName.json.ftl",
+  "db": "tainted_dblp1"
+}
