@@ -22,10 +22,12 @@ ETARA's global configuration is located in the file `clobal-config.json` and inc
 ```
 
 ### Configuring Data Bases
+The previously described configuration file for the databases used by ETARA looks like the following example.
+
 ```
 {
   "databases": {
-    "dblp": {
+    "example": {
       "path": "C:\\Databases\\example\\tdb",
       "source": "C:\\Databases\\example\\example.nt",
       "identifierMap": "configs\\identifierMaps\\example.json"
@@ -33,6 +35,8 @@ ETARA's global configuration is located in the file `clobal-config.json` and inc
   }
 }
 ```
+
+The JSON object `databases` consists of entries, also JSON objects, which store all the information that needs to be specified for a database. In this example, only one database is stored with the label `example`. Here `path` describes the path to the database index, in this case a TDB index. The entry `source` points to the raw text file of the database, typically a .nt or .ttl file. The access to the raw data is needed because ETARA initially generates a so-called identifier map. This is a mapping between the URI formatted relations (predicates) of an RDF file and a short keyword. Typically, the suffix specifies the keyword, but this can be renamed by the user. The identifier map is only created when ETARA is run for the first time, if it does not already exist.  An example for an identifier map looks as following:
 
 ```
 { 
