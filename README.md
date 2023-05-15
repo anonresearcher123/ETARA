@@ -93,7 +93,11 @@ The purpose of such an identifier map is to be able to use short keywords when c
 ```
 
 ### Running and Using ETARA
-After all configurations have been made, ETARA can be executed using an IDE (for example IntelliJ or Eclipse). All APIs specified by default under `configs/webservices` are then started and simulated.
+After all configurations have been made, ETARA can be executed using an IDE (for example IntelliJ or Eclipse). All APIs specified by default under `configs/webservices` are then started and simulated. An example of such a simulation can be seen in the following screenshot.
 
 ![Screenshot 2023-05-15 170136](https://github.com/anonresearcher123/ETARA/assets/120786910/f7b29cd7-71c8-48cd-a4a0-d17e7019028f)
+
+The simulated APIs are located under the base domain `http://localhost:8080` and can be requested via the respective paths, for example `http://localhost:8080/webservices/a0/work`. Executing a GET request (for example `http://localhost:8080/webservices/a0/work?orcid=0000-0003-2514-9306`) causes the simulated API a0 to issue a query to the database used, parse the query result and respond according to the template specifications. An example of such a response looks like the following:
+
+![Screenshot 2023-05-15 171242](https://github.com/anonresearcher123/ETARA/assets/120786910/636b055c-03f7-410e-9d06-5461c6a0f13d)
 
