@@ -57,6 +57,8 @@ The JSON object `databases` consists of entries, also JSON objects, which store 
 }
 ```
 
+The purpose of such an identifier map is to be able to use short keywords when configuring a response template, instead of using sperring and possibly incomprehensible URLs. A more detailed explanation of its use can be found in the next section of this documentation.
+
 ### Configuring Web APIs
 ```
 {
