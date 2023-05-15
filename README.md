@@ -62,21 +62,6 @@ The purpose of such an identifier map is to be able to use short keywords when c
 ### Configuring Web APIs
 ```
 {
-    "feed": {
-        "entry": {
-            "title": <#if subject.findValue("title")??>"${subject.findValue("title")?json_string}",<#else>"",</#if>
-            "author": [<#list subject.findValues("authorName") as name>
-                {
-                  "name": ${toJSONString(name)}
-                }<#sep>,</#sep>
-            </#list>]
-        }
-    }
-}            
-```
-
-```
-{
   "webservice" : "/example/publication",
   "errorType": "jsonWithStatus",
   "type": "precise",
@@ -92,4 +77,22 @@ The purpose of such an identifier map is to be able to use short keywords when c
 }         
 ```
 
+```
+{
+    "feed": {
+        "entry": {
+            "title": <#if subject.findValue("title")??>"${subject.findValue("title")?json_string}",<#else>"",</#if>
+            "author": [<#list subject.findValues("authorName") as name>
+                {
+                  "name": ${toJSONString(name)}
+                }<#sep>,</#sep>
+            </#list>]
+        }
+    }
+}            
+```
+
 ### Running and Using ETARA
+After all configurations have been made, ETARA can be executed using an IDE (for example IntelliJ or Eclipse). All APIs specified by default under `configs/webservices` are then started and simulated.
+![Screenshot 2023-05-15 170136](https://github.com/anonresearcher123/ETARA/assets/120786910/f7b29cd7-71c8-48cd-a4a0-d17e7019028f)
+
