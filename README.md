@@ -27,7 +27,7 @@ The previously described configuration file for the databases used by ETARA look
 ```
 {
   "databases": {
-    "example": {
+    "example_db": {
       "path": "C:\\Databases\\example\\tdb",
       "source": "C:\\Databases\\example\\example.nt",
       "identifierMap": "configs\\identifierMaps\\example.json"
@@ -36,7 +36,7 @@ The previously described configuration file for the databases used by ETARA look
 }
 ```
 
-The JSON object `databases` consists of entries, also JSON objects, which store all the information that needs to be specified for a database. In this example, only one database is stored with the label `example`. Here `path` describes the path to the database index, in this case a TDB index. The entry `source` points to the raw text file of the database, typically a .nt or .ttl file. The access to the raw data is needed because ETARA initially generates a so-called identifier map. This is a mapping between the URI formatted relations (predicates) of an RDF file and a short keyword. Typically, the suffix specifies the keyword, but this can be renamed by the user. The identifier map is only created when ETARA is run for the first time, if it does not already exist.  An example for an identifier map looks as following:
+The JSON object `databases` consists of entries, also JSON objects, which store all the information that needs to be specified for a database. In this example, only one database is stored with the label `example_db`. Here `path` describes the path to the database index, in this case a TDB index. The entry `source` points to the raw text file of the database, typically a .nt or .ttl file. The access to the raw data is needed because ETARA initially generates a so-called identifier map. This is a mapping between the URI formatted relations (predicates) of an RDF file and a short keyword. Typically, the suffix specifies the keyword, but this can be renamed by the user. The identifier map is only created when ETARA is run for the first time, if it does not already exist.  An example for an identifier map looks as following:
 
 ```
 { 
@@ -64,6 +64,9 @@ The first step in creating an API is to configure the general environment. The f
 
 * `webservice`: The simulated APIs are all hosted at the same base URL, but for each simulated API there is a path that leads only to that API. For example, the base URL can be set as `http://localhost:8080`. Now to send a request to the API shown in the example you must use the full path, i.e. `http://localhost:8080/webservices/example/publication`. With this setting the path to the API can also be underlaid with a semantic, for example `/author/works` indicates that all works written by an author are output.
 * `inputs`: This option is used to specify the query parameter of the API, since the URL alone does not enable a data query. In the example, the parameter `doi` is named, which results in a URL of the following form: `http://localhost:8080/webservices/example/publication?doi=...`
+* `where`: This parameter can be used to specify the WHERE pattern of a SPARQL query to find the resource requested by GET request in the database. It is important that the parameter in `inputs` and the object value in `where` match, because the object value will be overwritten by the user input when the SPARQL query is sent to the database.
+* `returnTemplate`: This parameter can be used to refer to the response template that is to be used. Usually this is located in the same folder as the environment config discussed here, but this does not have to be the case. Furthermore, different templates can be stored which are used for different scenarios. The response template is an Apache FreeMarker file and will be explained in the next section.
+* `db`: This specifies which of the registered databases is to be used as the information source. The label of a database is always used to reference it.
 
 ```
 {
@@ -78,7 +81,7 @@ The first step in creating an API is to configure the general environment. The f
     ["?subject", "doi", "$doi"]
   ],
   "returnTemplate": "example/example.json.ftl",
-  "db": "arxiv"
+  "db": "example_db"
 }         
 ```
 
