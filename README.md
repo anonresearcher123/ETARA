@@ -41,10 +41,8 @@ The JSON object `databases` consists of entries, also JSON objects, which store 
 ```
 { 
   "type" : "<http://example/com/crossref/type>" ,
-  "doiPrefix" : "<http://example/com/crossref/doiPrefix>" ,
   "doi" : "<http://example/com/crossref/doi>" ,
   "url" : "<http://example/com/crossref/url>" ,
-  "member" : "<http://example/com/crossref/member>" ,
   "publisher" : "<http://example/com/crossref/publisher>" ,
   "page" : "<http://example/com/crossref/page>" ,
   "volume" : "<http://example/com/crossref/volume>" ,
@@ -84,6 +82,8 @@ The first step in creating an API is to configure the general environment. The f
   "db": "example_db"
 }         
 ```
+
+Apache FreeMarker is a text engine and Java library to generate text output (e.g. JSON or XML files) based on templates and dynamic data. This means that based on a template (see example below) and a data source (e.g. the result of the SPARQL query configured in the `where` section) an output in the required format and type is generated. Apache FreeMarker provides some features that can be helpful when creating Repsonse templates, e.g., conditional blocks, iterations, assignments, string and arithmetic operations and formatting, macros and functions, including other templates, escaping by default (optional), and many more (see [Manual](https://freemarker.apache.org/docs/index.html)).
 
 ```
 {
