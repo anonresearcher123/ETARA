@@ -40,20 +40,20 @@ The JSON object `databases` consists of entries, also JSON objects, which store 
 
 ```
 { 
-  "type" : "<http://example/com/arxiv/type>" ,
-  "id" : "<http://example/com/arxiv/id>" ,
-  "key" : "<http://example/com/arxiv/key>" ,
-  "published" : "<http://example/com/arxiv/published>" ,
-  "title" : "<http://example/com/arxiv/title>" ,
-  "primaryCategoryTerm" : "<http://example/com/arxiv/primaryCategoryTerm>" ,
-  "updated" : "<http://example/com/arxiv/updated>" ,
-  "authorName" : "<http://example/com/arxiv/authorName>" ,
-  "link" : "<http://example/com/arxiv/link>" ,
-  "category" : "<http://example/com/arxiv/category>" ,
-  "rel" : "<http://example/com/arxiv/rel>" ,
-  "href" : "<http://example/com/arxiv/href>" ,
-  "scheme" : "<http://example/com/arxiv/scheme>" ,
-  "term" : "<http://example/com/arxiv/term>"
+  "type" : "<http://example/com/crossref/type>" ,
+  "doiPrefix" : "<http://example/com/crossref/doiPrefix>" ,
+  "doi" : "<http://example/com/crossref/doi>" ,
+  "url" : "<http://example/com/crossref/url>" ,
+  "member" : "<http://example/com/crossref/member>" ,
+  "publisher" : "<http://example/com/crossref/publisher>" ,
+  "page" : "<http://example/com/crossref/page>" ,
+  "volume" : "<http://example/com/crossref/volume>" ,
+  "issue" : "<http://example/com/crossref/issue>" ,
+  "score" : "<http://example/com/crossref/score>" ,
+  "referenceCount" : "<http://example/com/crossref/referenceCount>" ,
+  "citationCount" : "<http://example/com/crossref/citationCount>" ,
+  "author" : "<http://example/com/crossref/author>" ,
+  "title" : "<http://example/com/crossref/title>"
 }
 ```
 
