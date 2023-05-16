@@ -90,9 +90,9 @@ Apache FreeMarker is a text engine and Java library to generate text output (e.g
     "feed": {
         "entry": {
             "title": <#if subject.findValue("title")??>"${subject.findValue("title")?json_string}",<#else>"",</#if>
-            "author": [<#list subject.findValues("authorName") as name>
+            "author": [<#list subject.find("author") as author>
                 {
-                  "name": ${toJSONString(name)}
+                  "name": "${author.findValue("name")?json_string}"
                 }<#sep>,</#sep>
             </#list>]
         }
@@ -100,7 +100,7 @@ Apache FreeMarker is a text engine and Java library to generate text output (e.g
 }            
 ```
 
-The shown example of a response template should output the title and author names of a requested DOI in JSON format. It is important to note that the `where` parameter in the environment configuration does not need to query all the information such as title and author names, but only queries the entity with the corresponding DOI. If an entity with this DOI exists in the database, the next step is to collect all the information about this entity, which can then be inserted into the response template if needed. We see in the title line that an if-satetement is generated. Here it is first checked if a title for the requested DOI exists, if it does it is inserted into the template, otherwise an empty string is inserted.   
+The shown example of a response template should output the title and author names of a requested DOI in JSON format. It is important to note that the `where` parameter in the environment configuration does not need to query all the information such as title and author names, but only queries the entity with the corresponding DOI. If an entity with this DOI exists in the database, the next step is to collect all the information about this entity, which can then be inserted into the response template if needed. We see in the title line that an if-satetement is generated. Here it is first checked if a title for the requested DOI exists, if it does it is inserted into the template, otherwise an empty string is inserted. 
 
 ### Running and Using ETARA
 After all configurations have been made, ETARA can be executed using an IDE (for example IntelliJ or Eclipse). All APIs specified by default under `configs/webservices` are then started and simulated. An example of such a simulation can be seen in the following screenshot.
