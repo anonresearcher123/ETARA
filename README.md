@@ -60,6 +60,11 @@ The JSON object `databases` consists of entries, also JSON objects, which store 
 The purpose of such an identifier map is to be able to use short keywords when configuring a response template, instead of using sperring and possibly incomprehensible URLs. A more detailed explanation of its use can be found in the next section of this documentation.
 
 ### Configuring Web APIs
+The first step in creating an API is to configure the general environment. The following example shows many possible settings for an API, among others the latency (see `latency`) and the rate limit (see `maxRequestsPerMinute` and `maxRequests`) can be configured for each API individually. However, there are also other options, which are not so easy to understand. 
+
+* `webservice`: The simulated APIs are all hosted at the same base URL, but for each simulated API there is a path that leads only to that API. For example, the base URL can be set as `http://localhost:8080`. Now to send a request to the API shown in the example you must use the full path, i.e. `http://localhost:8080/webservices/example/publication`. With this setting the path to the API can also be underlaid with a semantic, for example `/author/works` indicates that all works written by an author are output.
+* `inputs`: This option is used to specify the query parameter of the API, since the URL alone does not enable a data query. In the example, the parameter `doi` is named, which results in a URL of the following form: http://localhost:8080/webservices/example/publication?doi=...`
+
 ```
 {
   "webservice" : "/example/publication",
@@ -68,11 +73,11 @@ The purpose of such an identifier map is to be able to use short keywords when c
   "latency": "1000",
   "maxRequestsPerMinute": "60",
   "maxRequests": "2000",
-  "inputs" : [ "arxivId" ],
+  "inputs" : [ "doi" ],
   "where" : [
-    ["?subject", "key", "$arxivId"]
+    ["?subject", "doi", "$doi"]
   ],
-  "returnTemplate": "arxiv/arxiv.json.ftl",
+  "returnTemplate": "example/example.json.ftl",
   "db": "arxiv"
 }         
 ```
